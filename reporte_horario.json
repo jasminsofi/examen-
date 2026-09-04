@@ -1,0 +1,42 @@
+[
+    {
+        "dia": "Lunes",
+        "eventos": [
+            {
+                "materia": "sociales",
+                "hora_inicio": "08:00",
+                "hora_fin": "13:00",
+                "ubicacion": "sala2"
+            }
+        ]
+    },
+    {
+        "dia": "Martes",
+        "eventos": []
+    },
+    {
+        "dia": "Miercoles",
+        "eventos": [
+            {
+                "materia": "matematicas",
+                "hora_inicio": "06:00",
+                "hora_fin": "08:00",
+                "ubicacion": "sala 2"
+            },
+            {
+                "materia": "ingles",
+                "hora_inicio": "10:00",
+                "hora_fin": "12:00",
+                "ubicacion": "sala blanca"
+            }
+        ]
+    },
+    {
+        "dia": "Jueves",
+        "eventos": []
+    },
+    {
+        "dia": "Viernes",
+        "eventos": []
+    }
+]

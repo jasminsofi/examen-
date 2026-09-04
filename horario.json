@@ -1,0 +1,30 @@
+[
+    {
+        "materia": "matematicas",
+        "dia": "Miercoles",
+        "hora_inicio": "06:00",
+        "hora_fin": "08:00",
+        "ubicacion": "sala 2"
+    },
+    {
+        "materia": "frances",
+        "dia": "Martes",
+        "hora_inicio": "09:00",
+        "hora_fin": "10:00",
+        "ubicacion": "salon 4"
+    },
+    {
+        "materia": "calculo 1",
+        "dia": "Martes",
+        "hora_inicio": "10:30",
+        "hora_fin": "11:30",
+        "ubicacion": "salon 4"
+    },
+    {
+        "materia": "humanidades",
+        "dia": "Viernes",
+        "hora_inicio": "05:00",
+        "hora_fin": "5:30",
+        "ubicacion": "azul"
+    }
+]
