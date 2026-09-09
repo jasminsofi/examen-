@@ -30,8 +30,20 @@ while True:
         gestor.eliminar_evento()
     elif opcion=="5":
         gestor.generar_reporte()
+    elif opcion=="7":
+        gestor.exportar_calendario() 
     elif opcion=="6":
         print("saliendo del programa...¡GRACIAS NOS VEMOS PRONTO CHAITO!")
         break
     else:
         print("opcion invalida, por favor seleccione una opcion valida")
+#git add .
+#git commit -m "Cambios en el proyecto"
+#git push
+#def ver_por_dia(self):
+   # dia = input("Ingrese el día: ").strip().capitalize()
+
+   # for evento in self.eventos:
+        #if evento["dia"] == dia:
+            #print(evento["materia"])
+

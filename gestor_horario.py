@@ -287,8 +287,46 @@ class GestorHorario:
 
     print("\nEvento no encontrado.")
    
+ # EXPORTAR CALENDARIO
+    def exportar_calendario(self):
+        calendario = {}
+        # Crear los días del calendario
+        for dia in DIAS_SEMANAL:
+            calendario[dia] = []
+             # Agregar los eventos a cada día
+            for evento in self.eventos:
+                dia = evento["dia"]
+                calendario[dia].append({
+                     "materia": evento["materia"],
+                     "hora_inicio": evento["hora_inicio"],
+                     "hora_fin": evento["hora_fin"],
+                     "ubicacion": evento["ubicacion"] if evento["ubicacion"] else "Sin ubicación"
+                       })
+                 # Ordenar los eventos de cada día
+                for dia in calendario:
+                    calendario[dia].sort( key=lambda evento: evento["hora_inicio"] )
+                    # Guardar el reporte
+                    with open("reporte_calendario.json", "w", encoding="utf-8") as archivo:
+                        json.dump(calendario,archivo,indent=4,ensure_ascii=False)
+                        # Mostrar reporte con paginación
+                        for dia in DIAS_SEMANAL:
+                            print("\n" + "=" * 20)
+                            print(dia)
+                            print("=" * 20)
+                            if calendario[dia]:
+                                for evento in calendario[dia]:
+                                    print(
+                                        f"- {evento['materia']} "
+                                        f"({evento['hora_inicio']} - {evento['hora_fin']}) "
+                                        f"en {evento['ubicacion']}")
+                                else:
+                                    print("- Sin actividades")
 
-           
+                        input("\nPresione ENTER para continuar...")
+
+                print("\nReporte calendario generado exitosamente.")
+
+    
 
     
    
