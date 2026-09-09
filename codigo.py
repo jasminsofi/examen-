@@ -9,6 +9,7 @@ def menu_horario():
     print("3.Modificar una materia o actividad")
     print("4.Eliminar una materia o actividad")
     print("5.Generar reporte del horario")
+    print("7.calendario")
     print("6.Salir")
     print("\n"+"="*42)
 
@@ -37,13 +38,4 @@ while True:
         break
     else:
         print("opcion invalida, por favor seleccione una opcion valida")
-#git add .
-#git commit -m "Cambios en el proyecto"
-#git push
-#def ver_por_dia(self):
-   # dia = input("Ingrese el día: ").strip().capitalize()
-
-   # for evento in self.eventos:
-        #if evento["dia"] == dia:
-            #print(evento["materia"])
 

@@ -1,0 +1,47 @@
+{
+    "Lunes": [
+        {
+            "materia": "ingles",
+            "hora_inicio": "5:00",
+            "hora_fin": "5:30",
+            "ubicacion": "sala blanca"
+        }
+    ],
+    "Martes": [
+        {
+            "materia": "python",
+            "hora_inicio": "06:30",
+            "hora_fin": "09:00",
+            "ubicacion": "spuk"
+        },
+        {
+            "materia": "frances",
+            "hora_inicio": "09:00",
+            "hora_fin": "10:00",
+            "ubicacion": "salon 4"
+        },
+        {
+            "materia": "calculo 1",
+            "hora_inicio": "10:30",
+            "hora_fin": "11:30",
+            "ubicacion": "salon 4"
+        }
+    ],
+    "Miercoles": [
+        {
+            "materia": "matematicas",
+            "hora_inicio": "06:00",
+            "hora_fin": "08:00",
+            "ubicacion": "sala 2"
+        }
+    ],
+    "Jueves": [],
+    "Viernes": [
+        {
+            "materia": "humanidades",
+            "hora_inicio": "05:00",
+            "hora_fin": "5:30",
+            "ubicacion": "azul"
+        }
+    ]
+}
