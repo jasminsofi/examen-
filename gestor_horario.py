@@ -6,7 +6,7 @@ import os
 from datetime import datetime 
 
 #DEFINIMOS CONSTANTES
-
+#Aqui estamos guardando el nombre de nuestro archivos
 #Donde se guarda el archivo 
 ARCHIVO_DATOS="horario.json" 
 #Donde se guarda el reporte 
@@ -20,7 +20,7 @@ DIAS_SEMANAL=[
     "Viernes"]
 
 #CLASE GESTORHORARIO
-
+#la clase es un molde 
 #class sirve para crear un objeto y que tenga varias caracteristicas 
 #_init_ es que autimaticamente de guarda las cosas 
 class GestorHorario:
@@ -33,8 +33,10 @@ class GestorHorario:
     def cargar_datos(self):
         self.eventos = []
         if os.path.exists(ARCHIVO_DATOS):
+            #try intenta leer el archivo 
             try:
                 # Se agrega encoding="utf-8" para leer tildes y la ñ correctamente
+                # la r es leer 
                 with open(ARCHIVO_DATOS, "r", encoding="utf-8") as archivo:
                     self.eventos = json.load(archivo)
             except json.JSONDecodeError:
@@ -51,6 +53,7 @@ class GestorHorario:
     #self.eventos es la lista que se guarda en el archivo json 
     #indent=4 es para que se vea bonito el archivo json 
     #ensure_ascii=False → permite que aparezcan normalmente las tildes y la ñ
+    #la W es escribir
     def guardar_datos(self):
         with open(ARCHIVO_DATOS,"w",encoding="utf-8") as archivo:
             json.dump(
@@ -74,6 +77,7 @@ class GestorHorario:
         
 #VALIDAR CHOQUES
 
+#self permite que todas las funciones trabajen con los mismos datos 
 #hay_conflicto es para ver si hay un choque materias o actividades en el horario
 #if evento["dia"]==dia: es para ver si el dia de la actividad que se quiere registrar es igual al dia de la actividad que ya esta registrada 
 # inicio_evento=evento["hora_inicio"] y fin_evento=evento["hora_fin"] es para guardar la hora de inicio y final de la actividad que ya esta registrada 
@@ -95,7 +99,8 @@ class GestorHorario:
 #aqui le permite agregar una nueva materia o actividad a un horario o agenda al usuario
 #el strip() es para quitar los espacios en blanco al inicio y al final de la cadena de texto 
 #el join()es para unir los elementos de una lista en una cadena separando el texto con comas
-
+#.strip()es para quitar los espacios innesesarios
+#.capitalize()convierte la primera letra en mayuscula 
     def registrar_evento(self):
         materia=input("ingrese el nombre de la materia o actividad:  ").strip()
         dia=input("ingrese el dia de la semana (lunes,martes,miercoles,jueves,viernes): ").strip().capitalize()

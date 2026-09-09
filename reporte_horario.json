@@ -3,16 +3,35 @@
         "dia": "Lunes",
         "eventos": [
             {
-                "materia": "sociales",
-                "hora_inicio": "08:00",
-                "hora_fin": "13:00",
-                "ubicacion": "sala2"
+                "materia": "ingles",
+                "hora_inicio": "5:00",
+                "hora_fin": "5:30",
+                "ubicacion": "sala blanca"
             }
         ]
     },
     {
         "dia": "Martes",
-        "eventos": []
+        "eventos": [
+            {
+                "materia": "python",
+                "hora_inicio": "06:30",
+                "hora_fin": "09:00",
+                "ubicacion": "spuk"
+            },
+            {
+                "materia": "frances",
+                "hora_inicio": "09:00",
+                "hora_fin": "10:00",
+                "ubicacion": "salon 4"
+            },
+            {
+                "materia": "calculo 1",
+                "hora_inicio": "10:30",
+                "hora_fin": "11:30",
+                "ubicacion": "salon 4"
+            }
+        ]
     },
     {
         "dia": "Miercoles",
@@ -22,12 +41,6 @@
                 "hora_inicio": "06:00",
                 "hora_fin": "08:00",
                 "ubicacion": "sala 2"
-            },
-            {
-                "materia": "ingles",
-                "hora_inicio": "10:00",
-                "hora_fin": "12:00",
-                "ubicacion": "sala blanca"
             }
         ]
     },
@@ -37,6 +50,13 @@
     },
     {
         "dia": "Viernes",
-        "eventos": []
+        "eventos": [
+            {
+                "materia": "humanidades",
+                "hora_inicio": "05:00",
+                "hora_fin": "5:30",
+                "ubicacion": "azul"
+            }
+        ]
     }
 ]

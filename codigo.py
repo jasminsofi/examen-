@@ -17,7 +17,7 @@ def menu_horario():
 gestor=GestorHorario()
 
 #creamos ciclo para que el menu se repite hasta que el usuario quiera salir 
-#el gestor
+#el gestor maneja todas funciones del horario
 while True:
     opcion=menu_horario()
     if opcion=="1":
